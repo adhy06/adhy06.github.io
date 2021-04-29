@@ -194,18 +194,18 @@
           </div>
 
           <div class="col-lg-6">
-            <form>
+            <form name="submit-to-google-sheet">
               <div class="form-group">
                 <label for="nama">Nama</label>
-                <input type="text" class="form-control" id="nama" />
+                <input type="text" class="form-control" id="nama" name="nama" />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email" />
+                <input type="text" class="form-control" id="email" name="email" />
               </div>
               <div class="form-group">
-                <label for="telp">No Telp</label>
-                <input type="text" class="form-control" id="telp" />
+                <label for="telephone">No Telp</label>
+                <input type="text" class="form-control" id="telephone" name="telephone" />
               </div>
               <div class="form-group">
                 <label for="pesan">Pesan</label>
@@ -213,7 +213,7 @@
               </div>
 
               <div class="form-group">
-                <button type="button" class="btn btn-primary">Kirim Pesan</button>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
               </div>
             </form>
           </div>
@@ -243,5 +243,16 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyANQtWw755E69mbXka98cE0RSrLPdsWgQoulWTOqu7hXF_7QXlwlECd8F5XmpTPsg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

@@ -1,6 +1,11 @@
+.navbar {
+  background-color: #d937fa;
+}
+
 .jumbotron {
-  padding-top: 6rem;
-  background-color: #fdd7b3;
+  background: url("../img/pulau-indo.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #galery {

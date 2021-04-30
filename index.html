@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info shadow-sm fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
           <img src="img/logo-mubar.png" alt="" width="6%" height="6%" class="d-inline-block align-text-top" />
@@ -36,17 +36,12 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#galery">Galery</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
@@ -63,10 +58,9 @@
     <section class="jumbotron text-center">
       <img src="img/logo-mubar.png" alt="bkpp-mubar" width="10%" class="rounded-circle img-thumbnail" />
       <h2 class="fs-1 fw-bol">BKPP MUBAR</h2>
-      <p class="lead"><a href="#" class="text-reset">Facebook</a> | <a href="#" class="text-reset">Twitter</a> | <a href="#" class="text-reset">Youtube</a></p>
+      <p class="lead"><a href="#" class="link-danger fw-bold fs-4">Facebook</a> | <a href="#" class="link-light fw-bold fs-4">Twitter</a> | <a href="#" class="link-warning fw-bold fs-4">Youtube</a></p>
 
-      <p class="lead text-warning">Badan Kepegawaian, Pendidikan dan Pelatihan</p>
-      <p class="lead">Kabupaten Muna Barat</p>
+      <p class="lead text-warning fw-bold fs-2">Badan Kepegawaian, Pendidikan dan Pelatihan</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -76,42 +70,149 @@
       </svg>
     </section>
     <!-- akhir jumbotron -->
+
     <!--About-->
     <section id="about">
-      <div class="container">
+      <div class="container mb-5">
         <div class="row text-center mb-4">
-          <h2>About</h2>
-          <hr />
+          <h2 class="fs-3 fw-bold text-decoration-underline">About</h2>
         </div>
         <div class="row justify-content-center fs-3 text-center">
-          <div class="col-sm" data-aos="fade-right" data-aos-duration="3000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti unde corporis aut ut aperiam, dolorem quis ipsam! Obcaecati, iste molestias.</div>
-          <div class="col-sm" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quo, facere deleniti sunt quos rem porro esse suscipit reiciendis.
+          <div class="col-sm" data-aos="fade-right" data-aos-duration="3000">
+            <p class="fs-4 fw-bold text-decoration-underline">Visi</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi repellendus cumque, natus unde qui quidem perspiciatis obcaecati illo! Similique in laudantium adipisci autem! Fuga, ipsam. Voluptas iure quidem similique!
+            </p>
           </div>
-          <div class="col-sm" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo ea. Pariatur fuga, id aliquid alias hic quisquam deleniti ipsa.
+          <div class="col-sm" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
+            <p class="fs-4 fw-bold text-decoration-underline">Misi</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi repellendus cumque, natus unde qui quidem perspiciatis obcaecati illo! Similique in laudantium adipisci autem! Fuga, ipsam. Voluptas iure quidem similique!
+            </p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fdd7b3"
-          fill-opacity="1"
-          d="M0,192L60,202.7C120,213,240,235,360,213.3C480,192,600,128,720,112C840,96,960,128,1080,144C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!--Akhir About-->
-
+    <div class="parallax" data-parallax="scroll" data-image-src="img/parallax/2.jpg">
+      <h2 class="text-center">L A Y A N A N</h2>
+    </div>
+    <!--Layanan-->
+    <section id="layanan">
+      <div class="container mb-5">
+        <h3 class="mb-3 fs-3 fw-bold text-decoration-underline text-center">Halaman Layanan</h3>
+        <br />
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#kp">Kenaikan Pangkat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#pensiun">Pensiun PNS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#izin">Izin Belajar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tugas">Tugas Belajar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#cuti">Cuti PNS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#izinlain">Izin Urusan Penting</a>
+          </li>
+        </ul>
+        <!--Kontent Pelayanan-->
+        <div class="tab-content">
+          <div class="tab-pane active" id="kp">
+            <div class="row border g-0 rounded shadow-sm">
+              <div class="col-6 p-4">
+                <h3>Kenaikan Pangkat</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum, delectus voluptatibus aliquam, sed, consectetur iure sunt laboriosam officia ipsum accusamus ratione fugit consequatur. Ut obcaecati ipsam expedita
+                  inventore nostrum.
+                </p>
+              </div>
+              <div class="col auto"><img src="img/layanan/b1.jpg" class="img-thumbnail dimension" /></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="pensiun">
+            <div class="row border g-0 rounded shadow-sm">
+              <div class="col-6 p-4">
+                <h3>Pensiun PNS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum, delectus voluptatibus aliquam, sed, consectetur iure sunt laboriosam officia ipsum accusamus ratione fugit consequatur. Ut obcaecati ipsam expedita
+                  inventore nostrum.
+                </p>
+              </div>
+              <div class="col-6"><img src="img/layanan/b2.jpg" class="img-thumbnail dimension" /></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="izin">
+            <div class="row border g-0 rounded shadow-sm">
+              <div class="col-6 p-4">
+                <h3>Izin Belajar</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum, delectus voluptatibus aliquam, sed, consectetur iure sunt laboriosam officia ipsum accusamus ratione fugit consequatur. Ut obcaecati ipsam expedita
+                  inventore nostrum.
+                </p>
+              </div>
+              <div class="col-6"><img src="img/layanan/b2.jpg" class="img-thumbnail dimension" /></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tugas">
+            <div class="row border g-0 rounded shadow-sm">
+              <div class="col-6 p-4">
+                <h3>Tugas Belajar</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum, delectus voluptatibus aliquam, sed, consectetur iure sunt laboriosam officia ipsum accusamus ratione fugit consequatur. Ut obcaecati ipsam expedita
+                  inventore nostrum.
+                </p>
+              </div>
+              <div class="col-6"><img src="img/layanan/b2.jpg" class="img-thumbnail dimension" /></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="cuti">
+            <div class="row border g-0 rounded shadow-sm">
+              <div class="col-6 p-4">
+                <h3>Cuti PNS</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum, delectus voluptatibus aliquam, sed, consectetur iure sunt laboriosam officia ipsum accusamus ratione fugit consequatur. Ut obcaecati ipsam expedita
+                  inventore nostrum.
+                </p>
+              </div>
+              <div class="col-6"><img src="img/layanan/b2.jpg" class="img-thumbnail dimension" /></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="izinlain">
+            <div class="row border g-0 rounded shadow-sm">
+              <div class="col-6 p-4">
+                <h3>Izin Urusan Penting</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum, delectus voluptatibus aliquam, sed, consectetur iure sunt laboriosam officia ipsum accusamus ratione fugit consequatur. Ut obcaecati ipsam expedita
+                  inventore nostrum.
+                </p>
+              </div>
+              <div class="col-6"><img src="img/layanan/b2.jpg" class="img-thumbnail dimension" /></div>
+            </div>
+          </div>
+        </div>
+        <!--Akhir Kontent Pelayanan-->
+      </div>
+    </section>
+    <!--Akhir Layanan-->
+    <div class="parallax" data-parallax="scroll" data-image-src="img/pulau-indo.jpg">
+      <h2 class="text-center">G A L E R Y</h2>
+    </div>
     <!--Galery-->
     <section id="galery">
       <div class="container">
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h2>My Galery</h2>
-            <hr />
+        <div class="row pt-4">
+          <div class="col text-center">
+            <h2 class="fs-3 fw-bold text-decoration-underline">Galery</h2>
           </div>
         </div>
+        <br />
         <div class="row mb-4">
           <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000">
             <div class="card">
@@ -139,7 +240,7 @@
           </div>
         </div>
         <div class="row mb-4">
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
             <div class="card">
               <img src="img/thumbs/4.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -147,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
+          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
             <div class="card">
               <img src="img/thumbs/5.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -155,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+          <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
             <div class="card">
               <img src="img/thumbs/6.png" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -164,26 +265,23 @@
             </div>
           </div>
         </div>
+        <br />
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,160L60,170.7C120,181,240,203,360,224C480,245,600,267,720,277.3C840,288,960,288,1080,250.7C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!--Akhir Galery-->
 
+    <div class="parallax" data-parallax="scroll" data-image-src="img/parallax/3.jpg">
+      <h2 class="text-center">K O N T A K</h2>
+    </div>
     <!--Contact-->
     <section id="contact">
       <div class="container">
-        <div class="row pt-4 mb-4">
+        <div class="row pt-4">
           <div class="col text-center">
-            <h2>Contact Us</h2>
-            <hr />
+            <h2 class="fs-3 fw-bold text-decoration-underline">Contact Us</h2>
           </div>
         </div>
+        <br />
 
         <div class="row justify-content-center mb-4">
           <div class="col-lg-4">
@@ -223,6 +321,7 @@
                 <label for="pesan">Pesan</label>
                 <textarea name="pesan" id="pesan" class="form-control"></textarea>
               </div>
+              <br />
 
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-kirim">Kirim Pesan</button>
@@ -262,6 +361,19 @@
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!--aos-->
     <script src="js/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js-1.5.0/parallax.min.js"></script>
+
+    <!-- Slim min js -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Development version -->
+    <script src="js/popper.js"></script>
+
+    <!-- Production version -->
+    <script src="js/popper.min.js"></script>
+
+    <!--AOS-->
     <script>
       AOS.init();
     </script>
